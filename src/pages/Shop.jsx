@@ -1,11 +1,13 @@
 import NavBar from '../components/NavBar';
+import Socials from '../components/Socials';
 
 const Shop = () => {
   return (
-    <>
+    <div>
+      <Socials />
       <NavBar />
-      Shop Page
-    </>
+      <h1>Shop</h1>
+    </div>
   );
 };
 
