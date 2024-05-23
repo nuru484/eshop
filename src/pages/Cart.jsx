@@ -1,5 +1,6 @@
 import NavBar from '../components/NavBar';
 import Socials from '../components/Socials';
+import Footer from '../components/Footer';
 
 const Cart = () => {
   return (
@@ -7,6 +8,7 @@ const Cart = () => {
       <Socials />
       <NavBar />
       <h1>Cart</h1>
+      <Footer />
     </div>
   );
 };

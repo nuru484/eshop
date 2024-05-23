@@ -1,5 +1,6 @@
 import NavBar from '../components/NavBar';
 import Socials from '../components/Socials';
+import Footer from '../components/Footer';
 
 const About = () => {
   return (
@@ -7,6 +8,7 @@ const About = () => {
       <Socials />
       <NavBar />
       <h1>About page</h1>
+      <Footer />
     </div>
   );
 };
