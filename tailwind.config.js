@@ -6,6 +6,8 @@ export default {
       colors: {
         globalColor1: '#4285f4',
         globalColor5: '#414141',
+        globalColor4: '#2d3e50',
+        footerColor: 'rgba(255, 255, 255, 0.5)',
       },
     },
   },
