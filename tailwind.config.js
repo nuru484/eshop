@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         globalColor1: '#4285f4',
+        globalColor5: '#414141',
       },
     },
   },

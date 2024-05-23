@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Home from './pages/Home';
 import ErrorPage from './pages/ErrorPage';
 import About from './pages/About';
-import Account from './pages/Account';
 import Contact from './pages/Contact';
 import Shop from './pages/Shop';
 import MyAccount from './pages/MyAccount';
@@ -21,7 +21,6 @@ const router = createBrowserRouter([
     path: '/about',
     element: <About />,
   },
-
   {
     path: '/contact',
     element: <Contact />,

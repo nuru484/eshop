@@ -11,22 +11,24 @@ const NavBar = () => {
 
   return (
     <div>
-      <nav className="bg-white p-4 flex gap-48 justify-between px-36 font-sans font-medium">
+      <nav className="bg-white py-2 flex gap-48 justify-between px-36 font-sans font-medium ">
         <ul>
-          <li className="flex items-center">
-            <img
-              src={logo}
-              alt="site logo"
-              className="w-14 mr-2 hover:cursor-pointer "
-            />
-            <p className="text-3xl font-bold hover:cursor-pointer">eShop</p>
+          <li>
+            <Link to="/" className="flex items-center">
+              <img
+                src={logo}
+                alt="site logo"
+                className="w-14 mr-2 hover:cursor-pointer "
+              />
+              <p className="text-2xl font-bold hover:cursor-pointer">eShop</p>
+            </Link>
           </li>
         </ul>
-        <ul className="flex items-center gap-4">
+        <ul className="flex flex-row justify-center items-center gap-2 text-sm text-globalColor5 ">
           <li>
             <Link
               to="/"
-              className="hover:text-globalColor1 hover:underline hover:underline-offset-8"
+              className="pl-3 hover:text-globalColor1 hover:underline hover:underline-offset-8 "
             >
               Home
             </Link>
@@ -34,7 +36,7 @@ const NavBar = () => {
           <li>
             <Link
               to="/shop"
-              className="hover:text-globalColor1 hover:underline hover:underline-offset-8"
+              className=" pl-3 hover:text-globalColor1 hover:underline hover:underline-offset-8"
             >
               Shop
             </Link>
@@ -42,7 +44,7 @@ const NavBar = () => {
           <li>
             <Link
               to="/about"
-              className="hover:text-globalColor1 hover:underline hover:underline-offset-8"
+              className=" pl-3 hover:text-globalColor1 hover:underline hover:underline-offset-8"
             >
               About
             </Link>
@@ -50,29 +52,49 @@ const NavBar = () => {
           <li>
             <Link
               to="/contact"
-              className="hover:text-globalColor1 hover:underline hover:underline-offset-8"
+              className="pl-3 flex hover:text-globalColor1 hover:underline hover:underline-offset-8"
             >
               Contact
             </Link>
           </li>
           <li
-            className="relative "
+            className="relative"
             onMouseEnter={() => toggleDropdown(true)}
             onMouseLeave={() => toggleDropdown(false)}
           >
-            <span className="cursor-pointer pb-6 hover:text-globalColor1 hover:underline hover:underline-offset-8">
-              Account
+            <span className="cursor-pointer flex items-center m-1 pl-2 hover:text-globalColor1 ">
+              <span className=" hover:underline hover:underline-offset-8">
+                Account
+              </span>
+
+              <i
+                className="fa fa-angle-down ml-1 self-end hover:"
+                aria-hidden="true"
+              ></i>
             </span>
+
             {showDropdown && (
-              <ul className="absolute left-0 mt-3 bg-white border rounded shadow-lg w-40">
-                <li className="px-4 py-3 hover:bg-gray-200 hover:text-globalColor1">
+              <ul className="absolute left-0 bg-white border shadow-lg w-40">
+                <li className="px-4 py-2.5 hover:bg-gray-200 hover:text-globalColor1">
                   <Link to="/my-account">My Account</Link>
                 </li>
-                <li className="px-4 py-3 hover:bg-gray-200 hover:text-globalColor1">
+                <li className="px-4 py-2.5 hover:bg-gray-200 hover:text-globalColor1">
                   <Link to="/cart">Cart</Link>
                 </li>
               </ul>
             )}
+          </li>
+          <li>
+            <i
+              className="fa fa-shopping-cart cursor-pointer pl-3 hover:text-globalColor1"
+              aria-hidden="true"
+            ></i>
+          </li>
+          <li>
+            <i
+              className="fa fa-search cursor-pointer pl-3 hover:text-globalColor1"
+              aria-hidden="true"
+            ></i>
           </li>
         </ul>
       </nav>
