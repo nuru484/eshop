@@ -5,20 +5,20 @@ const truncateToTwoWords = (str) => {
 
 const ProductCard = ({ products }) => {
   return (
-    <div className="flex flex-wrap justify-center items-center w-10/12 mx-auto">
+    <div className="grid grid-cols-4 gap-9 w-9/12 mx-auto my-8">
       {products.map((product) => (
         <div
           key={product.id}
-          className="relative flex flex-col items-center bg-white rounded shadow-md p-2 m-4 max-w-xl"
+          className="bg-white rounded shadow-md p-2 max-w-xl"
         >
           <div className="mb-4">
             <img
               src={product.image}
               alt={product.description}
-              className="w-36 h-36 object-contain rounded-md mx-3"
+              className="w-40 h-36 object-contain rounded-md mx-3"
             />
           </div>
-          <div className="w-full p-2 flex flex-col  bg-slate-100">
+          <div className="p-2 bg-slate-100">
             <h2 className="text-base text-globalColor5">
               {truncateToTwoWords(product.title)}
             </h2>

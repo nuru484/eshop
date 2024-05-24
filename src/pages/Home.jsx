@@ -2,21 +2,15 @@
 import NavBar from '../components/NavBar';
 import Socials from '../components/Socials';
 import Footer from '../components/Footer';
-import ProductCard from '../components/ProductCard';
-import useShopData from '../components/ShopData';
+import ProductCategories from '../components/ProductCategories';
 
 const Home = () => {
-  const { products, loading, error } = useShopData({
-    url: 'https://fakestoreapi.com/products?limit=8',
-  });
-
   return (
     <div className="flex flex-col min-h-screen">
       <Socials />
       <NavBar />
       <main className="flex-1">
-        <h1>Homepage</h1>
-        <ProductCard products={products} />
+        <ProductCategories />
       </main>
       <Footer />
     </div>
