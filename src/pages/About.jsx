@@ -4,10 +4,12 @@ import Footer from '../components/Footer';
 
 const About = () => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Socials />
       <NavBar />
-      <h1>About page</h1>
+      <main className="flex-1">
+        <h1>About Page</h1>
+      </main>
       <Footer />
     </div>
   );
