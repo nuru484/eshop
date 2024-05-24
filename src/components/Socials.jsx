@@ -1,19 +1,23 @@
+import FacebookIcon from '@mui/icons-material/Facebook';
+import XIcon from '@mui/icons-material/X';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 const Socials = () => {
   return (
     <div className="flex justify-around bg-globalColor1 py-1 text-white">
       <span></span>
-      <p className=" text-xs font-sans">
+      <p className="text-xs font-sans">
         Free Shipping on $50+, Free Returns on All Orders.
       </p>
       <ul className="flex gap-4 text-xs">
         <li>
-          <i className="fab fa-facebook-square" aria-hidden="true"></i>
+          <FacebookIcon style={{ fontSize: '20px' }} />
         </li>
         <li>
-          <i className="fab fa-twitter-square" aria-hidden="true"></i>
+          <XIcon style={{ fontSize: '20px' }} />
         </li>
         <li>
-          <i className="fab fa-instagram" aria-hidden="true"></i>
+          <InstagramIcon style={{ fontSize: '20px' }} />
         </li>
       </ul>
     </div>

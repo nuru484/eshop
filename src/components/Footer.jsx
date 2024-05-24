@@ -1,4 +1,7 @@
 import cards from '/src/assets/cards.png';
+import XIcon from '@mui/icons-material/X';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 const Footer = () => {
   return (
@@ -49,22 +52,13 @@ const Footer = () => {
           <h1 className="font-bold">GET IN TOUCH</h1>
           <ul className="flex gap-2 leading-loose py-4 ">
             <li>
-              <i
-                className="fab fa-facebook-square text-2xl hover:text-globalColor1 hover:cursor-pointer"
-                aria-hidden="true"
-              ></i>
+              <FacebookIcon className="text-2xl hover:text-globalColor1 hover:cursor-pointer" />
             </li>
             <li>
-              <i
-                className="fab fa-instagram text-2xl hover:text-globalColor1 hover:cursor-pointer"
-                aria-hidden="true"
-              ></i>
+              <XIcon className="text-2xl hover:text-globalColor1 hover:cursor-pointer" />
             </li>
             <li>
-              <i
-                className="fab fa-youtube text-2xl hover:text-globalColor1 hover:cursor-pointer"
-                aria-hidden="true"
-              ></i>
+              <YouTubeIcon className="text-2xl hover:text-globalColor1 hover:cursor-pointer" />
             </li>
           </ul>
         </section>
@@ -76,7 +70,10 @@ const Footer = () => {
       >
         <p>
           &copy; 2024 eShop - Built By{' '}
-          <a href="#" className=" text-globalColor1 underline hover:text-white">
+          <a
+            href="https://github.com/nuru484"
+            className=" text-globalColor1 underline hover:text-white"
+          >
             Nurudeen
           </a>
         </p>

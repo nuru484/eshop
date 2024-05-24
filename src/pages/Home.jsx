@@ -6,7 +6,9 @@ import ProductCard from '../components/ProductCard';
 import useShopData from '../components/ShopData';
 
 const Home = () => {
-  const { products, loading, error } = useShopData();
+  const { products, loading, error } = useShopData({
+    url: 'https://fakestoreapi.com/products?limit=8',
+  });
 
   return (
     <div className="flex flex-col min-h-screen">

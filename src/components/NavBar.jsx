@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import logo from '/src/assets/logo.jpg';
 import { Link } from 'react-router-dom';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import SearchIcon from '@mui/icons-material/Search';
 
 const NavBar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -66,11 +69,7 @@ const NavBar = () => {
               <span className=" hover:underline hover:underline-offset-8">
                 Account
               </span>
-
-              <i
-                className="fa fa-angle-down ml-1 self-end hover:"
-                aria-hidden="true"
-              ></i>
+              <KeyboardArrowDownIcon />
             </span>
 
             {showDropdown && (
@@ -85,16 +84,10 @@ const NavBar = () => {
             )}
           </li>
           <li>
-            <i
-              className="fa fa-shopping-cart cursor-pointer pl-3 hover:text-globalColor1"
-              aria-hidden="true"
-            ></i>
+            <ShoppingCartIcon className="cursor-pointer hover:text-globalColor1" />
           </li>
           <li>
-            <i
-              className="fa fa-search cursor-pointer pl-3 hover:text-globalColor1"
-              aria-hidden="true"
-            ></i>
+            <SearchIcon className="cursor-pointer hover:text-globalColor1 ml-2" />
           </li>
         </ul>
       </nav>
