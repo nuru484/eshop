@@ -31,7 +31,7 @@ const NavBar = () => {
           <li>
             <Link
               to="/"
-              className="pl-3 hover:text-globalColor1 hover:underline hover:underline-offset-8 "
+              className="pl-3 hover:text-globalColor1 hover:underline hover:underline-offset-8 active:underline "
             >
               Home
             </Link>
@@ -73,7 +73,7 @@ const NavBar = () => {
             </span>
 
             {showDropdown && (
-              <ul className="absolute left-0 bg-white border shadow-lg w-40">
+              <ul className="absolute left-0 bg-white border shadow-lg w-40 z-10">
                 <li className="px-4 py-2.5 hover:bg-gray-200 hover:text-globalColor1">
                   <Link to="/my-account">My Account</Link>
                 </li>

@@ -16,7 +16,7 @@ const Shop = () => {
       <Socials />
       <NavBar />
       <main className="flex-1">
-        <div className="container mx-auto">
+        <div className=" mx-auto">
           <h1
             className="text-5xl font-extrabold  p-16 text-center text-globalColor5 "
             style={{
