@@ -10,6 +10,8 @@ export default {
         globalColor9: '#ffffff',
         globalColor6: '#656565',
         footerColor: 'rgba(255, 255, 255, 0.5)',
+        WhyChooseUsColor: '#F2EEE2',
+        WhyChooseUsColorHover: '#F7F5EE',
       },
     },
   },
