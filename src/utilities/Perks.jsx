@@ -5,8 +5,8 @@ import GppGoodIcon from '@mui/icons-material/GppGood';
 
 const Perks = () => {
   return (
-    <div className="flex justify-center list-none text-xs mt-6">
-      <div className="flex flex-row items-center gap-4 py-4 m-3 px-5 shadow-sm">
+    <div className="flex justify-center list-none text-xs my-8">
+      <div className="flex flex-row items-center gap-4 py-4 px-5 shadow-sm">
         <li>
           <LocalShippingIcon />
         </li>
