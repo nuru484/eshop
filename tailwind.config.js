@@ -15,6 +15,8 @@ export default {
         WhyChooseUsColorHover: '#F7F5EE',
         customOrange: '#EA7D15',
         customOrangeHover: '#EE8018',
+        lightAsh: '#DEE1E2',
+        backgroundColor: '#F7FAFC',
       },
     },
   },
