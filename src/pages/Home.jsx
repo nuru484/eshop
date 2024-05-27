@@ -1,3 +1,4 @@
+import React from 'react';
 import NavBar from '../components/NavBar';
 import Socials from '../components/Socials';
 import Footer from '../components/Footer';
@@ -9,7 +10,7 @@ import useShopData from '../components/ShopData';
 import ProductCard from '../components/ProductCard';
 import Discount from '../utilities/Discount';
 import CustomerReviews from '../utilities/CustomerReviews';
-
+import ProductsCarousal from '../components/ProductsCarousal';
 import CircularProgress from '@mui/material/CircularProgress';
 
 const Home = () => {
@@ -55,6 +56,7 @@ const Home = () => {
 
         <Discount />
         <CustomerReviews />
+        <ProductsCarousal />
       </main>
       <Footer />
     </div>
