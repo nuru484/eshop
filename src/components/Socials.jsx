@@ -11,13 +11,22 @@ const Socials = () => {
       </p>
       <ul className="flex gap-4 text-xs">
         <li>
-          <FacebookIcon style={{ fontSize: '20px' }} />
+          <FacebookIcon
+            style={{ fontSize: '20px' }}
+            className="hover: cursor-pointer"
+          />
         </li>
         <li>
-          <XIcon style={{ fontSize: '20px' }} />
+          <XIcon
+            style={{ fontSize: '20px' }}
+            className="hover: cursor-pointer"
+          />
         </li>
         <li>
-          <InstagramIcon style={{ fontSize: '20px' }} />
+          <InstagramIcon
+            style={{ fontSize: '20px' }}
+            className="hover: cursor-pointer"
+          />
         </li>
       </ul>
     </div>
