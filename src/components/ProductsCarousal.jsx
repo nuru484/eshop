@@ -9,16 +9,19 @@ const ProductsCarousel = () => {
   });
 
   const [currentIndex, setCurrentIndex] = useState(0);
-
   const visibleItemsCount = 8;
 
   const handlePrevClick = () => {
-    setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0
+        ? Math.max(products.length - visibleItemsCount, 0)
+        : prevIndex - 1
+    );
   };
 
   const handleNextClick = () => {
     setCurrentIndex((prevIndex) =>
-      Math.min(prevIndex + 1, products.length - visibleItemsCount)
+      prevIndex >= products.length - visibleItemsCount ? 0 : prevIndex + 1
     );
   };
 
@@ -38,17 +41,18 @@ const ProductsCarousel = () => {
           className="cursor-pointer m-2"
         />
 
-        {products
-          .slice(currentIndex, currentIndex + visibleItemsCount)
-          .map((product) => (
-            <div key={product.id} className="flex-1 flex justify-center">
-              <img
-                src={product.image}
-                alt={product.title}
-                className="w-40 h-40 object-contain"
-              />
-            </div>
-          ))}
+        {products.length > 0 &&
+          products
+            .slice(currentIndex, currentIndex + visibleItemsCount)
+            .map((product) => (
+              <div key={product.id} className="flex-1 flex justify-center">
+                <img
+                  src={product.image}
+                  alt={product.title}
+                  className="w-40 h-40 object-contain"
+                />
+              </div>
+            ))}
 
         <ArrowForwardIosIcon
           onClick={handleNextClick}
