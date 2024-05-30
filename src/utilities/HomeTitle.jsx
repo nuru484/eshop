@@ -15,7 +15,7 @@ const HomeTitle = () => {
         Cheer Yourself Up with a New Product
       </h2>
 
-      <button className=" bg-globalColor1 max-w-36 p-4 mx-auto text-white rounded">
+      <button className=" bg-globalColor1 max-w-36 p-4 mx-auto text-white rounded hover:bg-globalColor2">
         Discover Now
       </button>
     </div>

@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import ProductCard from '../components/ProductCard';
 import useShopData from '../components/ShopData';
 import CircularProgress from '@mui/material/CircularProgress';
-import backgroundImage from '/src/assets/bg_03.jpg'; // Import your background image
+import PageTitle from '../components/PageTitle';
 
 const Shop = () => {
   const { products, loading, error } = useShopData({
@@ -17,17 +17,7 @@ const Shop = () => {
       <NavBar />
       <main className="flex-1">
         <div className=" mx-auto">
-          <h1
-            className="text-5xl font-extrabold  p-16 text-center text-globalColor5 "
-            style={{
-              backgroundImage: `url(${backgroundImage})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
-            Shop
-          </h1>
+          <PageTitle titleOfPage={'Shop'} />
           {loading && (
             <div className="flex justify-center items-center h-40">
               <CircularProgress color="primary" />

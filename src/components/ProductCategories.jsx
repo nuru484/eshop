@@ -27,7 +27,9 @@ const ProductCategories = () => {
         >
           <div className="bg-black bg-opacity-50 w-full p-2 text-center">
             <p className="font-bold">{product.name}</p>
-            <p className="underline">View All</p>
+            <p className="underline hover:cursor-pointer hover:text-lightAsh">
+              View All
+            </p>
           </div>
         </section>
       ))}

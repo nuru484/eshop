@@ -17,6 +17,7 @@ export default {
         customOrangeHover: '#EE8018',
         lightAsh: '#DEE1E2',
         backgroundColor: '#F7FAFC',
+        lighDeeptDark: '#2D3E50',
       },
     },
   },
