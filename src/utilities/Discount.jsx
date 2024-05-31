@@ -1,4 +1,4 @@
-import jesseGollBg from '/src/assets/jesse-goll-_MCwva4-0uY-unsplash.jpg';
+import jesseGollBg from '/src/assets/discount-bg.jpg';
 
 const Discount = () => {
   const handleSubmit = (event) => {
