@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import ProductsCarousel from '../components/ProductsCarousal';
 
 import backgroundImage from '/src/assets/about-bg.jpg';
+import paragraphBackground from '/src/assets/bg_03.jpg';
 import aboutPhoto1 from '/src/assets/library-of-congress-lw6pO_m2Ve4-unsplash.jpg';
 import aboutPhoto2 from '/src/assets/austrian-national-library-DSrf3mapye4-unsplash.jpg';
 
@@ -30,14 +31,19 @@ const About = () => {
         </div>
 
         <div>
-          <div>
-            <h2>OUR STORY</h2>
+          <div
+            className="w-9/12 mx-auto pt-14 "
+            style={{ borderBottom: '2px solid #F2EEE2' }}
+          >
+            <h2 className="text-globalColor1 text-sm font-bold py-4">
+              OUR STORY
+            </h2>
 
-            <div>
+            <div className="grid grid-cols-2 gap-20 mb-14">
               <div>
-                <h1>Since 1928</h1>
+                <h1 className="text-5xl py-4">Since 1928</h1>
 
-                <p>
+                <p className="text-sm leading-loose py-2">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                   libero massa, bibendum sit amet facilisis non, ullamcorper non
                   est. Suspendisse potenti. Integer a mi vel purus mollis
@@ -46,7 +52,7 @@ const About = () => {
                   Nam dictum ornare sagittis.
                 </p>
 
-                <p>
+                <p className="text-sm leading-loose py-4">
                   Ut faucibus sollicitudin est bibendum condimentum. Sed sit
                   amet urna nec diam iaculis pretium quis vel neque.
                   Pellentesque vitae mattis eros, a accumsan nibh. Sed gravida
@@ -55,20 +61,24 @@ const About = () => {
                 </p>
               </div>
 
-              <div>
-                <img src={aboutPhoto1} alt="about photo" />
+              <div className="relative mt-10 box-border mr-5">
+                <img src={aboutPhoto1} alt="about photo" className="w-9/12" />
 
-                <img src={aboutPhoto2} alt="different about photo" />
+                <img
+                  src={aboutPhoto2}
+                  alt="different about photo"
+                  className="absolute w-3/5 bottom-2/3 left-2/4"
+                />
               </div>
             </div>
           </div>
 
           <div>
-            <div>
-              <div>
-                <p>Since 1928</p>
+            <div className="w-9/12 mx-auto">
+              <div className="grid grid-cols-2 gap-20 py-10">
+                <h1 className="text-5xl py-4">Since 1928</h1>
 
-                <p>
+                <p className="text-sm leading-loose">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
                   libero massa, bibendum sit amet facilisis non, ullamcorper non
                   est. Suspendisse potenti. Integer a mi vel purus mollis
@@ -81,12 +91,12 @@ const About = () => {
               <ProductsCarousel />
             </div>
 
-            <div>
-              <div>
+            <div className="w-9/12 mx-auto py-10">
+              <div className="grid grid-cols-2 gap-20 ">
                 <div>
-                  <h2>Core Values</h2>
+                  <h2 className="text-xl font-bold py-4">Core Values</h2>
 
-                  <p>
+                  <p className="text-sm leading-relaxed">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Morbi libero massa, bibendum sit amet facilisis non,
                     ullamcorper non est. Suspendisse potenti. Integer a mi vel
@@ -101,9 +111,9 @@ const About = () => {
                 </div>
 
                 <div>
-                  <h2>Our Community</h2>
+                  <h2 className="text-xl font-bold py-4">Our Community</h2>
 
-                  <p>
+                  <p className="text-sm leading-relaxed">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Morbi libero massa, bibendum sit amet facilisis non,
                     ullamcorper non est. Suspendisse potenti. Integer a mi vel
@@ -121,15 +131,23 @@ const About = () => {
           </div>
         </div>
 
-        <div>
-          <q>
+        <div
+          className="py-10 text-center w-full"
+          style={{
+            backgroundImage: `url(${paragraphBackground})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+          <p className="text-2xl w-2/5 mx-auto leading-normal py-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-          </q>
+          </p>
 
-          <p>Nurudeen Abdul-Majeed</p>
+          <p className="py-3">Nurudeen Abdul-Majeed</p>
 
-          <p>Developer</p>
+          <p className="text-globalColor5"> Developer</p>
         </div>
       </main>
       <Footer />
