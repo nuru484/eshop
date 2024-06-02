@@ -11,7 +11,7 @@ const About = () => {
       <NavBar />
       <main className="flex-1">
         <div
-          className="p-20 pb-4"
+          className=""
           style={{
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: 'cover',
@@ -19,7 +19,11 @@ const About = () => {
             backgroundRepeat: 'no-repeat',
           }}
         >
-          <p className="text-white"> Shopping is fulfilling desires.</p>
+          <div className="p-20 pb-4 bg-blue-500 bg-opacity-60">
+            <p className="text-white text-5xl w-2/5 leading-snug pt-8 pl-8">
+              Shopping is fulfilling desires.
+            </p>
+          </div>
         </div>
         <h1>About Page</h1>
       </main>
